@@ -1,7 +1,7 @@
 module ProgressJob
   class ProgressController < ActionController::Base
     
-    before_action :autheticate_user!  
+    before_action :authenticate_user!  
 
     def show
       @delayed_job = Delayed::Job.find(params[:job_id])
