@@ -1,6 +1,7 @@
 module ProgressJob
   class ProgressController < ActionController::Base
     
+    #include devise method. Devise gem must be included for this to work
     before_action :authenticate_user!  
 
     def show
